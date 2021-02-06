@@ -40,7 +40,7 @@ public class Main {
                     System.out.println("Input " + number + " is between 0 and 17");
                     try
                     {
-                        if (number <=0)
+                        if (number <0)
                             System.out.println("It seems like You've entered negative number.");
                     }
                     catch (Exception e0)
