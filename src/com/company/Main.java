@@ -9,12 +9,18 @@ public class Main {
     public static void main(String[] args) {
         Sorting();
     }
+        public static boolean Scan() {
+            Scanner kb = new Scanner(System.in);
+            System.out.print("Enter integer number: ");
+            while (true)
+                try {
+                    number = Integer.parseInt(kb.nextLine());
+                    break;
+                } catch (NumberFormatException nfe) {
+                    System.out.print("Try again: ");
+                }
+            return true;
 
-    public static void Scan() {
-        Scanner numb = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        number = numb.nextInt();
-        System.out.println("You've entered: " + number);
     }
 
     public static void Sorting()
